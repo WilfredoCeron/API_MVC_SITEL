@@ -93,6 +93,86 @@ A continuación se describen los endpoints disponibles en la API.
 
 ---
 
+API de Tarjetas de Crédito
+﻿
+
+GET
+Obtener información de la tarjeta
+https://localhost:7177/api/EndPoint/Card/GetInfoCard?CardNumber=6164892848967402
+﻿
+
+Query Params
+CardNumber
+6164892848967402
+GET
+GetHistoryTransactions
+https://localhost:7177/api/EndPoint/Transaction/GetHistoryTransactions?CardNumber=6164892848967402&Month=10&Year=2025
+﻿
+
+Query Params
+CardNumber
+6164892848967402
+Month
+10
+Year
+2025
+GET
+GetHistoryBuy
+https://localhost:7177/api/EndPoint/Transaction/GetHistoryBuy?CardNumber=6164892848967402&Month=10&Year=2025
+﻿
+
+Query Params
+CardNumber
+6164892848967402
+Month
+10
+Year
+2025
+GET
+GetHistoryPayment
+https://localhost:7177/api/EndPoint/Transaction/GetHistoryPayment?CardNumber=6164892848967402&Month=10&Year=2025
+﻿
+
+Query Params
+CardNumber
+6164892848967402
+Month
+10
+Year
+2025
+POST
+CreateNewBuy
+https://localhost:7177/api/EndPoint/Transaction/CreateNewBuy
+﻿
+
+Body
+raw (json)
+```json
+json
+{
+  "cardNumber": "6164892848967402",
+  "amount": 10,
+  "description": "comprar el pan",
+  "dateBuy": "2025-03-16T03:55:30.895Z"
+}
+```
+
+POST
+CreateNewPayment
+https://localhost:7177/api/EndPoint/Transaction/CreateNewBuy
+﻿
+
+Body
+raw (json)
+```json
+json
+{
+  "cardNumber": "6164892848967402",
+  "amount": 10,
+  "description": "comprar el pan",
+  "dateBuy": "2025-03-16T03:55:30.895Z"
+}
+```
 ## **Cómo Probar la Aplicación 🧪**
 
 ### Requisitos Previos
